@@ -1,0 +1,43 @@
+.boxFooter{
+
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0,58,115);
+    background: radial-gradient(circle, rgba(0,58,115,1) 0%, rgba(0,58,115,1) 50%, rgba(47,84,159,1) 100%);
+    width: 100%;   
+    /* border: solid red 4px; */
+    padding: 0.5%;
+}
+
+.tamBloque{
+    width:20%;
+    justify-content:center;
+}
+
+
+
+.tamLogo{    
+    width: 100%;
+}
+
+.textoAbajo{
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0,58,115);
+    background: radial-gradient(circle, rgba(0,58,115,1) 0%, rgba(0,58,115,1) 50%, rgba(47,84,159,1) 100%);
+    width: 100%;
+    font-family: Helvetica;
+    color:white;    
+    font-size: 15px;
+    margin: 0;    
+}
+
+.btn-blue{
+    background-color: #003a73;
+    border-color: #003a73;
+}
+

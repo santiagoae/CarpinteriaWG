@@ -1,0 +1,22 @@
+.navContenedor{
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    /* background: rgb(3,37,108);
+    background: linear-gradient(225deg, rgba(3,37,108,1) 0%, rgba(26,74,175,1) 48%, rgba(3,37,108,1) 100%); */
+    background: rgba(0, 58, 115, 0.596) ;
+    background: rgb(0, 58, 115)nt(225deg, rgba(0,58,115,1) 0%, rgba(47,84,159,1) 48%, rgba(0,58,115,1) 100%);
+    width: 100%; 
+    position: fixed; 
+    z-index: 3;
+
+    /* border: solid red 4px; */
+    
+}
+
+.colorText{
+
+    color: white;
+
+}

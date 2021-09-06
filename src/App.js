@@ -1,10 +1,23 @@
 import React from 'react';
 import './styles/App.css';
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import Carrusel from './Components/Carrusel'
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Carpinteria WG</h1>
+    <div className="App fondo">
+      <Router >            
+        <Header />      
+          <Switch>
+            <Route exact path='/' component={Carrusel}></Route>
+            {/* <Route path='/nuestrosServicios' component={NS}></Route>
+            <Route path='/zonaYoutube' component={Zona}></Route>
+            <Route path='/ticBlogs' component={Ticblogs}></Route> */}
+          </Switch>
+        <Footer />      
+      </Router>
     </div>
   );
   
