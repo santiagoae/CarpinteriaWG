@@ -11,17 +11,17 @@ const Footer = () => {
                     <div className='row tamBloque '>
                         <div className='col-md-3  '>
                             <a href="https://www.facebook.com/TicsBrothers/" target='_blanck' rel='noreferrer'>
-                                <img src={Facebook} alt="FB" className='tamLogo btn btn-primary btn-blue' /> 
+                                <img src={Facebook} alt="FB" className='tamLogo btn btn-secondary btn-blue' /> 
                             </a>                                                   
                         </div>
                         <div className='col-md-3'>
                             <a href="https://www.instagram.com/ticsbrothers/" target='_blanck' rel='noreferrer'>
-                                <img src={Instagram} alt="IG" className='tamLogo btn btn-primary btn-blue' />    
+                                <img src={Instagram} alt="IG" className='tamLogo btn btn-secondary btn-blue' />    
                             </a>                            
                         </div>
                         <div className='col-md-3'>
                             <a href="https://www.youtube.com/channel/UCqgWl0JM3FrweIr__qcUDhA" target='_blanck' rel='noreferrer'>
-                                <img src={Youtube} alt="YT" className='tamLogo btn btn-primary btn-blue' />
+                                <img src={Youtube} alt="YT" className='tamLogo btn btn-secondary btn-blue' />
                             </a>                            
                         </div>
                     </div>              
