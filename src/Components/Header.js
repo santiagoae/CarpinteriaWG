@@ -22,15 +22,15 @@ const Header = () => {
                                 <a className="nav-link colorText" aria-current="page" href="/nuestrosServicios" >Nustros Servicios</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link colorText" href="/zonaYoutube">
+                                <a className="nav-link colorText" href="/Productos">
                                     Productos
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link colorText" href="/ticBlogs">Materiales</a>
+                                <a className="nav-link colorText" href="/Materiales">Materiales</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link colorText" href="/ticBlogs">Carrito de compra</a>
+                                <a className="nav-link colorText" href="/">Carrito de compra</a>
                             </li>
                         </ul>
                         <form className="d-flex">
