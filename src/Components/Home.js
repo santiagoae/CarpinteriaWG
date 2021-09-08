@@ -6,7 +6,7 @@ import Cards from './Cards'
 
 const Home = () => {
     return (
-        <div className='box'>
+        <div>
             <Carrusel />
             <Cards />
         </div>

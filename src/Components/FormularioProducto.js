@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Home.css'
+import '../styles/FormularioProducto.css'
 
 const FormularioProducto = () => {
     return (
