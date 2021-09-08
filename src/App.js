@@ -4,11 +4,12 @@ import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Home from './Components/Home'
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Login from './Components/Login'
 
 function App() {
   return (
     <div className="App fondo">
-      <Router >            
+      <Router >                 
         <Header />      
           <Switch>
             <Route exact path='/' component={Home}></Route>
@@ -16,7 +17,8 @@ function App() {
             <Route path='/zonaYoutube' component={Zona}></Route>
             <Route path='/ticBlogs' component={Ticblogs}></Route> */}
           </Switch>
-        <Footer />      
+        <Footer />
+        <Login/>      
       </Router>
     </div>
   );

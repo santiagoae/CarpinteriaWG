@@ -1,14 +1,14 @@
 import React from 'react'
 import Carrusel from './Carrusel'
-import '../styles/Home.css'
+
 
 
 const Home = () => {
     return (
-        <div className='box'>
+        <div>
             <Carrusel />
         </div>
     )
 }
 
-export default Carrusel
+export default Home
