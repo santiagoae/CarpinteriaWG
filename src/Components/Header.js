@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/favicon/logo-02.png'
 import '../styles/Header.css'
+import Login from './Login'
 
 const Header = () => {
     
@@ -106,7 +107,7 @@ const Header = () => {
                     </div>
                 </div>        
 
-            
+                <login/>
             </div>
             
             
