@@ -1,5 +1,13 @@
-const registrarForm = document.querySelector('#registrarForm')
+const Login = () => {
+    const registrarForm = document.querySelector('#registrarForm')
+    return (            
 
-registrarForm.addEventListener('submit',()=>{
-    console.log('enviando')
-} )
+         registrarForm.addEventListener('submit',(e)=>{
+                e.preventDefault()
+                console.log('enviando')
+         } )
+
+    )
+}
+
+export default Login
