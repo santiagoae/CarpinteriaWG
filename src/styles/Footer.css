@@ -1,41 +1,8 @@
-.boxFooter{
-
-    display:flex;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    background: #b2b1b9;
-    width: 100%;   
-    /* border: solid red 4px; */
-    padding: 0.5%;
+.main-footer{
+    background-color: #595260;
 }
 
-.tamBloque{
-    width:20%;
-    justify-content:center;
+.row{
+    color: white;
+    padding: 2px;
 }
-
-
-
-.tamLogo{    
-    width: 100%;
-}
-
-.textoAbajo{
-    display:flex;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    background: #b2b1b9;
-    width: 100%;
-    font-family: Helvetica;
-    color:black;    
-    font-size: 15px;
-    margin: 0;    
-}
-
-.btn-blue{
-    background-color: #b2b1b9;
-    border-color: #b2b1b9;
-}
-

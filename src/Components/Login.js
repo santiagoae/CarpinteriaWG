@@ -1,3 +1,4 @@
+/*
 const Login = () => {
     const registrarForm = document.querySelector('#registrarForm')
     return (            
@@ -11,3 +12,4 @@ const Login = () => {
 }
 
 export default Login
+*/ 
