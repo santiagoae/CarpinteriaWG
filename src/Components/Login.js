@@ -1,7 +1,8 @@
 import React , {useState, useEffect} from 'react'
 import fire from '../firebaseConfig'
-import Hero from './Hero'
+import Header from './Header'
 import '../styles/Login.css'
+  
 
 
 const Login = () => {
@@ -66,20 +67,21 @@ const Login = () => {
         fire.auth().signOut();
     }
 
-    const authListener = () => {
-        fire.auth().onAuthStateChanged(user => {
-            if(user){
-                clearInputs();
-                setUser(user);
-            }
-            else
-            setUser('');
-        })
-    }
+    
 
-    // useEffect(() => {
-    //     authListener();        
-    // },[])
+    useEffect(() => {
+        const authListener = () => {
+            fire.auth().onAuthStateChanged(user => {
+                if(user){
+                    clearInputs();
+                    setUser(user);
+                }
+                else
+                setUser('');
+            })
+        }
+        authListener();       
+    },[])
 
     
     return (
@@ -87,7 +89,7 @@ const Login = () => {
             
            <div>
                {user ? (
-                <Hero handleLogout={handleLogout}/>
+                <Header handleLogout={handleLogout}/>
                 ) : (
                     <section className='login'>
                
