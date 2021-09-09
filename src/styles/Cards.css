@@ -1,0 +1,35 @@
+.boxCards{
+
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+    /* background: rgb(3,37,108);
+    background: linear-gradient(225deg, rgba(3,37,108,1) 0%, rgba(26,74,175,1) 48%, rgba(3,37,108,1) 100%); */
+    background: #b2b1b9;
+    /* background-color: rgb(255, 255, 255); */
+    width: 100%;
+    justify-content: center;
+    margin-top: 1%;
+    /* border: solid red 4px;  */
+    padding: 1%;
+}
+
+.tamCards{
+    width: 86%;
+}
+
+.fondoCards{
+    
+    /* background: rgb(3,37,108);
+    background: radial-gradient(circle, rgba(3,37,108,1) 0%, rgba(26,74,175,0.3029586834733894) 48%, rgba(3,37,108,1) 100%);     */
+    background: rgb(89,82,96);
+    background: linear-gradient(90deg, rgba(89,82,96,1) 0%, rgba(128,122,135,0.896796218487395) 48%, rgba(96,90,103,1) 100%);
+}
+
+.textoCards{
+    color: white;
+}
+
+.tamImg{
+    height: 500px;
+}

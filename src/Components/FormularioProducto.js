@@ -1,73 +1,162 @@
-import React from 'react'
-import '../styles/FormularioProducto.css'
+// import React from 'react'
+// import '../styles/FormularioProducto.css'
+// import fire from '../firebaseConfig'
 
-const FormularioProducto = () => {
-    return (
-        <form class="row g-3">
-            <div class="col-md-4">
-                <label for="validationServer01" class="form-label">First name</label>
-                <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required/>
-                <div class ="valid-feedback">
-                Looks good!
-                </div>
-            </div>
-            <div class="col-md-4">
-                <label for="validationServer02" class="form-label">Last name</label>
-                <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required/>
-                <div class ="valid-feedback">
-                Looks good!
-                </div>
-            </div>
-            <div class="col-md-4">
-                <label for="validationServerUsername" class="form-label">Username</label>
-                <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                    <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required/>
-                    <div id="validationServerUsernameFeedback" class ="invalid-feedback">
-                    Please choose a username.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <label for="validationServer03" class="form-label">City</label>
-                <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required/>
-                <div id="validationServer03Feedback" class ="invalid-feedback">
-                Please provide a valid city.
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label for="validationServer04" class="form-label">State</label>
-                <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required >
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                </select>
-                <div id="validationServer04Feedback" class="invalid-feedback">
-                    Please select a valid state.
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label for="validationServer05" class="form-label">Zip</label>
-                <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required />
-                <div id="validationServer05Feedback" class ="invalid-feedback">
-                Please provide a valid zip.
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required />
-                    <label class ="form-check-label" for="invalidCheck3">
-                    Agree to terms and conditions
-                    </label>
-                    <div id="invalidCheck3Feedback" class ="invalid-feedback">
-                    You must agree before submitting.
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-        </form>
-    )
-}
 
-export default FormularioProducto
+
+// const FormularioProducto = () => {
+    
+    
+
+//     return (
+//         <div class="Box-container">
+//             ;<>
+//                 <div className="jumbotron jumbotron-fluid">
+//                     <div className="container">
+//                         <h1 className="display-8">Productos</h1>
+//                     </div>
+//                 </div>
+//                 <div className="container">
+//                     <div className="row">
+//                         <div className="col-lg-6">
+//                             <button
+//                                 id="btnNuevo"
+//                                 className="btn btn-primary"
+//                                 data-toggle="tooltip"
+//                                 title="Nuevo Producto"
+//                             >
+//                                 <svg
+//                                     className="bi bi-plus-circle-fill"
+//                                     width="1em"
+//                                     height="1em"
+//                                     viewBox="0 0 16 16"
+//                                     fill="currentColor"
+//                                     xmlns="http://www.w3.org/2000/svg"
+//                                 >
+//                                     <path
+//                                         fillRule="evenodd"
+//                                         d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4a.5.5 0 0 0-1 0v3.5H4a.5.5 0 0 0 0 1h3.5V12a.5.5 0 0 0 1 0V8.5H12a.5.5 0 0 0 0-1H8.5V4z"
+//                                     />
+//                                 </svg>
+//                             </button>
+//                             {/*Modal*/}
+//                             <div
+//                                 id="modalAltaEdicion"
+//                                 className="modal fade"
+//                                 tabIndex={-1}
+//                                 role="dialog"
+//                                 aria-labelledby="exampleModalLabel"
+//                                 aria-hidden="true"
+//                             >
+//                                 <div className="modal-dialog" role="document">
+//                                     <div className="modal-content">
+//                                         <div className="modal-header bg-primary text-light">
+//                                             <h5 className="modal-title" id="exampleModalLabel">
+//                                                 Alta / Edición
+//                                             </h5>
+//                                             <button
+//                                                 type="button"
+//                                                 className="close"
+//                                                 data-dismiss="modal"
+//                                                 aria-label="Close"
+//                                             >
+//                                                 <span aria-hidden="true">×</span>
+//                                             </button>
+//                                         </div>
+//                                         <form>
+//                                             <div className="modal-body">
+//                                                 <input id="id" type="hidden" />{" "}
+//                                                 {/* ID que vamos a recibir de firebase */}
+//                                                 <div className="form-group">
+//                                                     <label>Código</label>
+//                                                     <input
+//                                                         id="codigo"
+//                                                         type="text"
+//                                                         className="form-control"
+//                                                         required
+//                                                     />
+//                                                 </div>
+//                                                 <div className="form-group">
+//                                                     <label>Imagen</label>
+//                                                     <input
+//                                                         id="imagen"
+//                                                         type="image"
+//                                                         className="form-control"
+//                                                         required
+//                                                     />
+//                                                 </div>
+//                                                 <div className="form-group">
+//                                                     <label>Descripción</label>
+//                                                     <input
+//                                                         id="descripcion"
+//                                                         type="text"
+//                                                         className="form-control"
+//                                                         required
+//                                                     />
+//                                                 </div>
+//                                                 <div className="form-group">
+//                                                     <label>Cantidad</label>
+//                                                     <input
+//                                                         id="cantidad"
+//                                                         type="number"
+//                                                         className="form-control"
+//                                                         required
+//                                                     />
+//                                                 </div>
+//                                                 <div className="input-group mb-3">
+//                                                     <label>Precio</label>
+//                                                     <span className="input-group-text">$</span>
+//                                                     <input
+//                                                         type="text"
+//                                                         className="form-control"
+//                                                         aria-label="Amount (to the nearest dollar)"
+//                                                     />
+//                                                     <span className="input-group-text">.00</span>
+//                                                 </div>
+
+//                                             </div>
+//                                             <div className="modal-footer">
+//                                                 <button
+//                                                     type="button"
+//                                                     className="btn btn-secondary"
+//                                                     data-dismiss="modal"
+//                                                     tabIndex={2}
+//                                                 >
+//                                                     Cancelar
+//                                                 </button>
+//                                                 <button
+//                                                     type="submit"
+//                                                     id="btnGuardar"
+//                                                     className="btn btn-success"
+//                                                     translate={1}
+//                                                 >
+//                                                     Guardar
+//                                                 </button>
+//                                             </div>
+//                                         </form>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                             <table id="tablaProductos" className="table table-bordered">
+//                                 <thead>
+//                                     <tr className="bg-dark text-light">
+//                                         <th scope="col">CÓDIGO</th>
+//                                         <th scope="col">IMAGEN</th>
+//                                         <th scope="col">DESCRIPCIÓN</th>
+//                                         <th scope="col">CANTIDAD</th>
+//                                         <th scope="col">PRECIO</th>
+//                                         <th scope="col">ACCIONES</th>
+//                                     </tr>
+//                                 </thead>
+//                                 <tbody id="bodyProductos"></tbody>
+//                             </table>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </>
+
+//         </div>
+//     );
+// };
+
+// export default FormularioProducto

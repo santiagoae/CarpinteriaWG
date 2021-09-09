@@ -35,7 +35,7 @@
     flex-direction: column;
     justify-content: center;
     background: rgb(89,82,96);
-background: linear-gradient(90deg, rgba(89,82,96,1) 0%, rgba(128,122,135,0.896796218487395) 48%, rgba(96,90,103,1) 100%);
+    background: linear-gradient(90deg, rgba(89,82,96,1) 0%, rgba(128,122,135,0.896796218487395) 48%, rgba(96,90,103,1) 100%);
     box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
   }
   
