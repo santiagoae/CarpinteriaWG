@@ -1,13 +1,13 @@
-import React from 'react'
-import '../styles/Productos.css'
-import FormularioProducto from './FormularioProducto'
+// import React from 'react'
+// import '../styles/Productos.css'
+// import FormularioProducto from './FormularioProducto'
 
-const Productos = () => {
-    return (
-        <div className='box'>
-            <FormularioProducto />
-        </div>
-    )
-}
+// const Productos = () => {
+//     return (
+//         <div className='box'>
+//             <FormularioProducto />
+//         </div>
+//     )
+// }
 
-export default Productos
+// export default Productos

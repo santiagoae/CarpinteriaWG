@@ -13,14 +13,15 @@
     /* border: solid red 4px; */
     
 }
-nav {
+.navOrdenar {
     display: flex;
     justify-content: space-between;
     padding: 20px 5%;
-
 }
 
-
+.nav-item{
+    padding: 8px;
+}
 
 .colorText{
 
