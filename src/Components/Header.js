@@ -24,7 +24,7 @@ const Header = ({handleLogout}) => {
                                 <a className="nav-link colorText" aria-current="page" href="/nuestrosServicios" >Nustros Servicios</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link colorText" href="/zonaYoutube">
+                                <a className="nav-link colorText" href="/Productos">
                                     Productos
                                 </a>
                             </li>
