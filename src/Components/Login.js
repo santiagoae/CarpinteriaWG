@@ -42,6 +42,7 @@ const Login = () => {
                     
                 }
             })
+
     }
     
     const handleSignup = () => {
@@ -94,14 +95,14 @@ const Login = () => {
                     <section className='login'>
                
                     <div className="loginContainer">
-                        <label >Username</label>
+                        <label >Usuario</label>
                         <input type="email" 
                          autoFocus required 
                          value={email} 
                          onChange={e => setEmail(e.target.value)} 
                         />
                         <p className="errorMsg">{emailError}</p>
-                        <label>Passord</label>
+                        <label>Contraseña</label>
                         <input type="password" 
                          required 
                          value={password} 
@@ -111,13 +112,13 @@ const Login = () => {
                         <div className="btnContainer">
                             {hasAccount ? (
                                 <>
-                                <button onClick={handleLogin}>Sign in</button>
-                                <p>Dont have an account ? <span onClick={()=>setHasAccount(!hasAccount)}>Sign up</span></p>
+                                <button onClick={handleLogin}>Iniciar sesion</button>                                                               
+                                <p>Aun no tienes cuenta? <span onClick={()=>setHasAccount(!hasAccount)}>Registrate aquí</span></p>
                                 </>
                             ) : (
                                  <>
-                                 <button onClick={handleSignup}>Sign up</button>
-                                 <p>Have an account ? <span onClick={()=>setHasAccount(!hasAccount)}>Sign in</span></p>
+                                 <button onClick={handleSignup}>Registrate</button>                                                                  
+                                 <p>Ya estas con nosotros? <span onClick={()=>setHasAccount(!hasAccount)}>Inicia sesion aquí</span></p>
                                  </>
                             )}
                         </div>

@@ -9,7 +9,8 @@ import Materiales from './Components/Materiales';
 import Login from './Components/Login'; 
  
 const App = () => {
-  return (
+
+    return (
     <div className="App fondo">
       <Router >
                         
@@ -23,8 +24,7 @@ const App = () => {
             <Route path='/zonaYoutube' component={Zona}></Route>
             <Route path='/ticBlogs' component={Ticblogs}></Route> */}
           </Switch>
-        <Footer />     
-          
+        <Footer />
       </Router>
     </div>
   );
