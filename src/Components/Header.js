@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/favicon/menus logo-04.png";
-import "../styles/Header.css";
+import '../styles/Header.css'
 
 const Header = ({ handleLogout }) => {
   return (

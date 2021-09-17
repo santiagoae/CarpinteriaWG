@@ -28,8 +28,7 @@ function App() {
             <Route path='/zonaYoutube' component={Zona}></Route>
             <Route path='/ticBlogs' component={Ticblogs}></Route> */}
 
-          </Switch>
-          
+          </Switch>          
         <Footer />
       </Router>
     </div>

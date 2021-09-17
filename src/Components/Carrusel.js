@@ -28,7 +28,7 @@ const Carrusel = () => {
           >
             <a href="/" target='_blank ' rel='noreferrer'>
               <img
-                src="https://www.milideas.net/wp-content/uploads/hacer-escritorio-ideas-1-1-1280x720.jpg"
+                src="https://www.frigicoll.es/blog/wp-content/uploads/2020/03/img-post-HEADER-5.jpg"
                 className=" d-block w-100  tamimg"
                 alt="Escritorio"                                   
               />
